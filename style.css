@@ -654,19 +654,89 @@ ul { list-style: none; }
 .access__list dd { font-size: 14px; color: var(--text-light); line-height: 1.8; }
 
 .map-placeholder {
+  position: relative;
   width: 100%; height: 320px;
-  background: linear-gradient(135deg, #f0e8f8, #e8f0f8);
+  background: #e8f0e4;
   border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   box-shadow: var(--shadow);
   border: 1px solid rgba(155,109,214,0.1);
+  overflow: hidden;
 }
-.map-inner { text-align: center; }
-.map-pin { font-size: 40px; margin-bottom: 8px; }
-.map-inner p { font-weight: 700; font-size: 16px; color: var(--dark); }
-.map-inner span { font-size: 13px; color: var(--text-light); }
+
+/* 道路 */
+.map-road {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #d4cfc8;
+}
+.map-road--h1 { top: 38%;  left: 0; right: 0; height: 18px; }
+.map-road--h2 { top: 62%;  left: 0; right: 0; height: 10px; }
+.map-road--h3 { top: 18%;  left: 0; right: 0; height: 8px; }
+.map-road--v1 { left: 32%; top: 0; bottom: 0; width: 18px; }
+.map-road--v2 { left: 60%; top: 0; bottom: 0; width: 10px; }
+.map-road--v3 { left: 15%; top: 0; bottom: 0; width: 8px; }
+
+/* 緑地 */
+.map-park {
+  position: absolute;
+  background: #c8e0b4;
+  border-radius: 6px;
+}
+.map-park--1 { top: 6%;  left: 36%; width: 22%; height: 30%; }
+.map-park--2 { top: 68%; left: 4%;  width: 10%; height: 22%; }
+
+/* ピン */
+.map-marker {
+  position: absolute;
+  top: 36%; left: 28%;
+  transform: translate(-50%, -100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+.map-marker__pin {
+  width: 20px; height: 20px;
+  background: var(--pink);
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(232,84,122,0.5);
+}
+.map-marker__label {
+  margin-top: 6px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 6px 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  white-space: nowrap;
+}
+.map-marker__label strong { display: block; font-size: 13px; color: var(--dark); }
+.map-marker__label span   { font-size: 11px; color: var(--text-light); }
+
+/* 駅 */
+.map-station {
+  position: absolute;
+  bottom: 22%; left: 53%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 11px;
+  color: var(--text);
+  white-space: nowrap;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+/* ウォーターマーク */
+.map-credit {
+  position: absolute;
+  bottom: 8px; right: 12px;
+  font-size: 10px;
+  color: rgba(0,0,0,0.35);
+  letter-spacing: 0.03em;
+}
 
 /* ===== FOOTER ===== */
 .footer { background: var(--dark); padding: 52px 0; text-align: center; }
