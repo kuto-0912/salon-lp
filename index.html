@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumière | 表参道の美容サロン</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ナビゲーション -->
+  <nav class="nav">
+    <div class="nav__logo">Lumière</div>
+    <ul class="nav__links">
+      <li><a href="#concept">コンセプト</a></li>
+      <li><a href="#menu">メニュー</a></li>
+      <li><a href="#staff">スタッフ</a></li>
+      <li><a href="#access">アクセス</a></li>
+      <li><a href="#reserve" class="nav__cta">予約する</a></li>
+    </ul>
+    <button class="hamburger" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ヒーロー -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__blob"></div>
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="dot"></span>
+        表参道・完全予約制サロン
+      </div>
+      <h1 class="hero__title">
+        あなたらしい<br>
+        <span class="accent">美しさ</span>を、<br>
+        ともに。
+      </h1>
+      <p class="hero__sub">
+        丁寧なカウンセリングと確かな技術で<br>
+        毎日「自分が好き」と思える髪を一緒に作ります
+      </p>
+      <div class="hero__btns">
+        <a href="#reserve" class="btn btn--primary">無料カウンセリングを予約 →</a>
+        <a href="#menu" class="btn btn--ghost">メニューを見る</a>
+      </div>
+    </div>
+    <div class="hero__scroll">scroll</div>
+  </section>
+
+  <!-- コンセプト -->
+  <section class="section concept" id="concept">
+    <div class="container concept__inner">
+      <div class="concept__img-wrap fade-up">
+        <div class="concept__img concept__img--1"></div>
+        <div class="concept__img concept__img--2"></div>
+        <div class="concept__badge-float">
+          <span class="concept__badge-num">92%</span>
+          <span class="concept__badge-text">リピート率</span>
+        </div>
+      </div>
+      <div class="concept__text fade-up" style="transition-delay:.15s">
+        <span class="label">CONCEPT</span>
+        <h2 class="heading">光のように、<br><em>内側から輝く</em></h2>
+        <p>Lumièreはフランス語で「光」を意味します。トレンドを追うだけでなく、あなた本来の魅力を引き出すスタイルを提案します。</p>
+        <p>丁寧なカウンセリングと確かな技術で、毎日の自分が好きになれるようサポートします。</p>
+        <a href="#menu" class="btn btn--outline">メニューを見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- メニュー -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <div class="section-head fade-up">
+        <span class="label label--purple">MENU</span>
+        <h2 class="heading heading--center">人気<em>メニュー</em></h2>
+        <p class="section-desc">初回は全メニュー無料カウンセリング付き。お気軽にご相談ください。</p>
+      </div>
+      <div class="menu__grid">
+        <div class="menu__card fade-up">
+          <div class="menu__card-img menu__card-img--1"></div>
+          <div class="menu__card-body">
+            <h3>カット＋カラー</h3>
+            <p>ダメージを最小限に抑えた独自の施術で、艶やかな仕上がりを実現します。</p>
+            <span class="price">¥12,000〜</span>
+          </div>
+        </div>
+        <div class="menu__card menu__card--featured fade-up" style="transition-delay:.1s">
+          <div class="tag">人気No.1</div>
+          <div class="menu__card-img menu__card-img--2"></div>
+          <div class="menu__card-body">
+            <h3>トリートメント</h3>
+            <p>サロン専売品を使った集中ケア。髪の芯から潤いをしっかり届けます。</p>
+            <span class="price">¥8,000〜</span>
+          </div>
+        </div>
+        <div class="menu__card fade-up" style="transition-delay:.2s">
+          <div class="menu__card-img menu__card-img--3"></div>
+          <div class="menu__card-body">
+            <h3>ヘッドスパ</h3>
+            <p>頭皮環境を整え、リラクゼーションと美しい髪を同時に叶えます。</p>
+            <span class="price">¥6,000〜</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-cta fade-up">
+        <a href="#reserve" class="btn btn--primary">全メニューを相談する →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数字 -->
+  <section class="stats">
+    <div class="container stats__inner">
+      <div class="stat fade-up">
+        <span class="stat__num">1,200<small>名+</small></span>
+        <span class="stat__label">累計お客様数</span>
+      </div>
+      <div class="stat fade-up" style="transition-delay:.08s">
+        <span class="stat__num">4.9<small>/5.0</small></span>
+        <span class="stat__label">顧客満足度</span>
+      </div>
+      <div class="stat fade-up" style="transition-delay:.16s">
+        <span class="stat__num">8<small>年</small></span>
+        <span class="stat__label">平均スタイリスト経験</span>
+      </div>
+      <div class="stat fade-up" style="transition-delay:.24s">
+        <span class="stat__num">92<small>%</small></span>
+        <span class="stat__label">リピート率</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- スタッフ -->
+  <section class="section staff" id="staff">
+    <div class="container">
+      <div class="section-head fade-up">
+        <span class="label">STAFF</span>
+        <h2 class="heading heading--center"><em>スタイリスト</em>紹介</h2>
+      </div>
+      <div class="staff__grid">
+        <div class="staff__card fade-up">
+          <div class="staff__avatar staff__avatar--1"></div>
+          <h3>Aoi Tanaka</h3>
+          <p class="staff__role">トップスタイリスト</p>
+          <p class="staff__bio">パリ修行後に帰国。外国人風カラーが得意で雑誌掲載多数。細毛・猫っ毛のお悩みにも対応。</p>
+        </div>
+        <div class="staff__card fade-up" style="transition-delay:.1s">
+          <div class="staff__avatar staff__avatar--2"></div>
+          <h3>Kenji Mori</h3>
+          <p class="staff__role">カラースペシャリスト</p>
+          <p class="staff__bio">ダメージレスな独自カラー技術を開発。メンズスタイルにも定評があります。</p>
+        </div>
+        <div class="staff__card fade-up" style="transition-delay:.2s">
+          <div class="staff__avatar staff__avatar--3"></div>
+          <h3>Rina Sato</h3>
+          <p class="staff__role">ヘッドスパ担当</p>
+          <p class="staff__bio">アロマセラピスト資格保有。頭皮トラブルのご相談もお気軽にどうぞ。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お客様の声 -->
+  <section class="section reviews">
+    <div class="container">
+      <div class="section-head fade-up">
+        <span class="label label--teal">REVIEWS</span>
+        <h2 class="heading heading--center">お客様の<em>声</em></h2>
+      </div>
+      <div class="reviews__grid">
+        <div class="review fade-up">
+          <div class="stars">★★★★★</div>
+          <p>カウンセリングがとても丁寧で、なりたいイメージを完全に再現してくれました。初めてでも安心して任せられるサロンです。</p>
+          <span>— 20代 女性</span>
+        </div>
+        <div class="review fade-up" style="transition-delay:.1s">
+          <div class="stars">★★★★★</div>
+          <p>トリートメントで髪質が劇的に改善！施術中のヘッドマッサージも最高でした。毎月来たいと思えるお店です。</p>
+          <span>— 30代 女性</span>
+        </div>
+        <div class="review fade-up" style="transition-delay:.2s">
+          <div class="stars">★★★★★</div>
+          <p>男性でも通いやすい雰囲気で、スタイリストさんとの会話も楽しい。仕上がりも毎回期待以上で大満足です。</p>
+          <span>— 20代 男性</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 予約 -->
+  <section class="section reserve" id="reserve">
+    <div class="container reserve__inner">
+      <div class="fade-up">
+        <span class="label">RESERVATION</span>
+        <h2 class="heading heading--center">ご予約・<em>お問い合わせ</em></h2>
+        <p class="reserve__sub">初回は無料カウンセリング付き。どんなお悩みでもお気軽にどうぞ。<br>通常24時間以内にご連絡いたします。</p>
+      </div>
+      <form class="form fade-up" style="transition-delay:.1s">
+        <div class="form__row">
+          <div class="form__group">
+            <label>お名前 <span class="required">必須</span></label>
+            <input type="text" placeholder="山田 花子">
+          </div>
+          <div class="form__group">
+            <label>電話番号 <span class="required">必須</span></label>
+            <input type="tel" placeholder="090-0000-0000">
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__group">
+            <label>ご希望メニュー</label>
+            <select>
+              <option value="">選択してください</option>
+              <option>カット＋カラー</option>
+              <option>トリートメント</option>
+              <option>ヘッドスパ</option>
+              <option>その他・まず相談したい</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label>ご希望日時</label>
+            <input type="datetime-local">
+          </div>
+        </div>
+        <div class="form__group">
+          <label>メッセージ（任意）</label>
+          <textarea placeholder="髪のお悩みや気になることをお気軽にお書きください"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full btn--lg">
+          予約リクエストを送る →
+        </button>
+        <div class="form__notes">
+          <span>✓ 24時間以内にご連絡</span>
+          <span>✓ キャンセル無料</span>
+          <span>✓ 初回カウンセリング無料</span>
+        </div>
+      </form>
+
+      <!-- LINE予約 -->
+      <div class="line-reserve fade-up" style="transition-delay:.2s">
+        <p>LINEからも予約できます</p>
+        <a href="#" class="btn btn--line">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+          LINE で予約する
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- アクセス -->
+  <section class="section access" id="access">
+    <div class="container access__inner">
+      <div class="access__info fade-up">
+        <span class="label label--purple">ACCESS</span>
+        <h2 class="heading">店舗<em>情報</em></h2>
+        <dl class="access__list">
+          <dt>住所</dt>
+          <dd>東京都渋谷区神宮前4-0-0<br>表参道ビル3F</dd>
+          <dt>営業時間</dt>
+          <dd>10:00 〜 20:00（最終受付 19:00）</dd>
+          <dt>定休日</dt>
+          <dd>毎週火曜日</dd>
+          <dt>電話</dt>
+          <dd>03-0000-0000</dd>
+          <dt>アクセス</dt>
+          <dd>東京メトロ表参道駅 A2出口より徒歩3分</dd>
+        </dl>
+        <div style="margin-top:28px">
+          <a href="#reserve" class="btn btn--primary">今すぐ予約する →</a>
+        </div>
+      </div>
+      <div class="access__map fade-up" style="transition-delay:.15s">
+        <div class="map-placeholder">
+          <div class="map-inner">
+            <div class="map-pin">📍</div>
+            <p>Lumière</p>
+            <span>表参道駅 徒歩3分</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__logo">Lumière</p>
+      <ul class="footer__links">
+        <li><a href="#concept">コンセプト</a></li>
+        <li><a href="#menu">メニュー</a></li>
+        <li><a href="#staff">スタッフ</a></li>
+        <li><a href="#access">アクセス</a></li>
+        <li><a href="#reserve">予約</a></li>
+      </ul>
+      <p class="footer__copy">© 2025 Lumière. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- LINE浮きボタン -->
+  <a href="#reserve" class="line-float" aria-label="LINE予約">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>
